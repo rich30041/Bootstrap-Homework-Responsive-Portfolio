@@ -10,46 +10,54 @@
         <link rel="stylesheet" href="./assets/css/style.css">
         <title>Rich Matthews</title>
     </head>
-    <body>
+<body>
     <!--- Navbar --->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary static-top">
-        <a class="navbar-brand" href="index.html">Tail of the Dragon</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto text-right">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-    </nav>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary static-top">
+        
+            <a class="navbar-brand" href="index.html">Tail of the Dragon</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto text-right">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+     
+        </nav>
+    </div>
 
-
-<div class="cont-container">
+<div class="container">
     <div class="page-header">
         <h1>Contact</h1>
       </div> 
 
-  <form action="/action_page.php">
-    <label for="fname">Name</label>
-    <input type="text" id="name" name="name" placeholder="name">
-
-    <label for="lname">Email</label>
-    <input type="text" id="email" name="email" placeholder="email">
-
-    <label for="subject">Message</label>
-    <textarea id="message" name="message" placeholder="Your Message" style="height:100px"></textarea>
-
-    <input type="submit" value="Submit">
-  </form>
+      <form id="contact-form">
+        <ul>
+          <li>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Harley Davidson" required="required">
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+          </li>
+          <li>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required="required"></textarea>
+          </li>
+        </ul>
+        <input type="submit">
+      </form>
 
   <div class="footer">
     <p>Tail of the Dragon</p>
