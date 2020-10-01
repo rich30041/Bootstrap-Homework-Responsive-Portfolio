@@ -16,7 +16,7 @@ p {
     width: 100%;
     padding: 30px;
    /* margin: 0 0 40px; */
-    margin: auto 
+    margin: auto; 
     max-width: 1000px;
     background: #ffffff;
     border: 1px solid #ddd;
@@ -55,8 +55,10 @@ h1 {
   font-size: 50px;
   word-break: break-all;
 }
-  /* Create three equal columns that floats next to each other */
-
+ 
+h3 {
+  font-size: 25px;
+}
 
 .row {
     margin: 8px -16px;
@@ -139,23 +141,14 @@ h1 {
   .column { width: 100%}
 }
 
-@media screen and (max-width: 768px) and (min-width: 639px) {
+@media screen and (max-width: 850px) and (min-width: 639px) {
   .column { width: 100%}
-  .container {
-    width: 700px;
-    max-width: 700px;
-    margin: 10 auto;
-    clear: both;
-}
+
 }
 
-@media screen and (max-width: 994px) and (min-width: 769px) {
+@media screen and (max-width: 999px) and (min-width: 849px) {
     .column { width: 50%}
-    .container {
-      width: 1200px;
-      margin: 10 auto;
-      clear: both;
-  }
+ 
 }
 
 @media screen and (min-width: 1000px) {
