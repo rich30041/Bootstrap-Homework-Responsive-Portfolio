@@ -1,11 +1,6 @@
+/* Used for all files */
 body {
   background-image: url("../images/simple-pattern.png") ;
-}
-.container {
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
-  clear: both;
 }
 
 p {
@@ -13,6 +8,18 @@ p {
     font-size: 30px;
     color: black;
   }
+
+  * { box-sizing: border-box;  }
+
+  .all-section {
+    float: left;
+    width: 100%;
+    padding: 30px;
+    margin: 0 0 40px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+  }
+
 .page-header {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -20,6 +27,7 @@ p {
     color: Black;
   }
 
+  /* About/Index page */
   .rich-image {
     float: left;
     width: 270px;
@@ -28,10 +36,6 @@ p {
     margin-right: 25px;
   }
 
-  .left {
-    float: left;
-    padding: 0 10px 0 0;}
-
   #last-para {
       padding-top: 20px;
       margin-bottom: 150px;
@@ -39,22 +43,6 @@ p {
   }
 
   /* Portfolio css */
-  
-  
-  #portfolio-container {
-    padding-top: 40px;
-  }
-  
-  .portfolio-section {
-    float: left;
-    width: 100%;
-    max-width: 750px;
-    padding: 30px;
-    margin: 0 0 40px;
-    background: #ffffff;
-    border: 1px solid #ddd;
-  }
-
   div.gallery {
     position: relative;
     float: left;
@@ -75,10 +63,7 @@ p {
     text-align: center;
   }
 
-  * { box-sizing: border-box;  }
-  
   /* contact */
-
   #contact-form ul {
     margin-bottom: 20px;
   }
@@ -117,7 +102,6 @@ p {
     border: 0 none;
   }
   
-  
 /* Footer section */
 .footer {
   position: fixed;
@@ -126,38 +110,26 @@ p {
   bottom: 0;
   color: white;
   text-align: center;
+  background: none;
   background-color: blue;
   }
+  
 
-  /* Generic css */
-
-/* Extra small devices (phones, 600px and down) */
-@media screen and (max-width: 600px) {
-  body { 
-    background-color: black;
+  /* Media css */
+@media screen and (max-width: 994px) and (min-width: 769px) {
+    .container {
+      width: 1200px;
+      margin: 0 auto;
+      clear: both;
   }
 
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media screen and (min-width: 600px) {
-  body { 
-    background-color: orange;
+@media screen and (max-width: 768px) and (min-width: 639px) {
+    .container {
+      width: 700px;
+      max-width: 700px;
+      margin: 0 auto;
+      clear: both;
   }
+  
+@media screen and (max-width: 640px) {}
 
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media screen and (min-width: 768px) {
-  body {
-    background-color: blue;
-  }
-
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media screen and (min-width: 992px) {
-  body {
-    background-color: gray;
-  }
- }
