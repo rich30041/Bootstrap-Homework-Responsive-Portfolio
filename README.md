@@ -1,5 +1,5 @@
 # Responsive-Portfolio
-Homework for week 2`
+Homework for week 2, this involved creating multiple HTML files using CSS and Bootstap to build a responsive website..`
 
 # Description
 

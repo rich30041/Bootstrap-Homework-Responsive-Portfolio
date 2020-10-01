@@ -15,7 +15,9 @@ p {
     float: left;
     width: 100%;
     padding: 30px;
-    margin: 0 0 40px;
+   /* margin: 0 0 40px; */
+    margin: auto 
+    max-width: 1000px;
     background: #ffffff;
     border: 1px solid #ddd;
   }
@@ -43,25 +45,43 @@ p {
   }
 
   /* Portfolio css */
-  div.gallery {
-    position: relative;
-    float: left;
-    width: 275px;
-    margin: 20px 0 25px;
-    padding: 0 6px;
-    overflow: auto;
-    }
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
 
-  div.gallery img {
-    width: 100%;
-    height: auto;
-    border: 0 none;
-  }
-  
-  div.desc {
-    padding: 15px;
-    text-align: center;
-  }
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+  /* Create three equal columns that floats next to each other */
+
+
+.row {
+    margin: 8px -16px;
+}
+
+.row,
+.row > .column {
+  padding: 8px;
+}
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content {
+  background-color: white;
+  padding: 10px;
+}
 
   /* contact */
   #contact-form ul {
@@ -113,23 +133,34 @@ p {
   background: none;
   background-color: blue;
   }
-  
 
-  /* Media css */
-@media screen and (max-width: 994px) and (min-width: 769px) {
-    .container {
-      width: 1200px;
-      margin: 0 auto;
-      clear: both;
-  }
+/* Responsive layout  */
+@media screen and (max-width: 640px) {
+  .column { width: 100%}
+}
 
 @media screen and (max-width: 768px) and (min-width: 639px) {
+  .column { width: 100%}
+  .container {
+    width: 700px;
+    max-width: 700px;
+    margin: 10 auto;
+    clear: both;
+}
+}
+
+@media screen and (max-width: 994px) and (min-width: 769px) {
+    .column { width: 50%}
     .container {
-      width: 700px;
-      max-width: 700px;
-      margin: 0 auto;
+      width: 1200px;
+      margin: 10 auto;
       clear: both;
   }
-  
-@media screen and (max-width: 640px) {}
+}
+
+@media screen and (min-width: 1000px) {
+  .column { width: 33.3333333%}
+}
+
+
 
